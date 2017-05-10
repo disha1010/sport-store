@@ -1,9 +1,9 @@
-import React from "react";
-import bitmap_slide from './img/bitmap_slide.png'
-import bitmap_slide_2 from './img/bitmap_slide_2.png'
-import bitmap_slide_3 from './img/bitmap_slide_3.png'
-import bitmap_slide_4 from './img/bitmap_slide_4.png'
-import bitmap from './img/bitmap_3@3x.png'
+import React from 'react';
+import itemPic1 from './img/item-pic-1.png'
+import itemPic2 from './img/item-pic-2.png'
+import itemPic3 from './img/item-pic-3.png'
+import itemPic4 from './img/item-pic-4.png'
+import itemPicFull from './img/item-pic-full.png'
 
 export default () => {
   return (
@@ -24,21 +24,21 @@ export default () => {
           </div>
         </div>
         <div className="item-zoom-img">
-          <img src={bitmap} alt="bitmap_3@3x.png" />
+          <img src={itemPicFull} alt="shoes big image.png" />
         </div>
         <div className="item-details">
           <div className="item-img-container">
             <button className="button-img">
-              <img src={bitmap_slide} alt="bitmap_slide.png" />
+              <img src={itemPic1} alt="shoes big image" />
             </button>
             <button className="button-img">
-              <img src={bitmap_slide_2} alt="bitmap_slide_2.png" />
+              <img src={itemPic2} alt="shoes slide image" />
             </button>
             <button className="button-img">
-              <img src={bitmap_slide_3} alt="bitmap_slide_3.png" />
+              <img src={itemPic3} alt="shoes slide image" />
             </button>
             <button className="button-img">
-              <img src={bitmap_slide_4} alt="bitmap_slide_4.png" />
+              <img src={itemPic4} alt="shoes slide image" />
             </button>
           </div>
           <div className="item-imgs-expand">
