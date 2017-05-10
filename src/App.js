@@ -4,6 +4,7 @@ import Sidebar from './Sidebar'
 import List from './List'
 import Details from './Details'
 import './style.css'
+import './flexboxgrid.css'
 
 class App extends Component {
   render() {
