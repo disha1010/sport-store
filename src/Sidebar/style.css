@@ -13,15 +13,6 @@
   left: 414px;
   position: relative;
 }
-.logo {
-  width: 77px;
-  height: 52px;
-  padding-top: 21px;
-  padding-bottom: 21px;
-  padding-left: 9px;
-  padding-right: 9px;
-  margin: 0 auto;
-}
 .search-field {
   display: flex;
   border-bottom: 4px solid rgba(55,55,55,0.56);
