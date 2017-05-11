@@ -1,5 +1,5 @@
-import React from 'react'
-import filter from './img/filter.png'
+import React from "react";
+const filter = require(`../image/filter.png`);
 
 export default () => {
   return (
