@@ -6,7 +6,7 @@ const logo = require(`../../image/logo.png`);
 export default () => {
   return (
     <Wrapper>
-      <Link className="logo-img" to="/shoes">
+      <Link className="logo-img" to="/">
         <img src={logo} alt="adidas-logo.png" />
       </Link>
     </Wrapper>

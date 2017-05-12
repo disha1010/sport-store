@@ -1,19 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import classNames from "classnames/bind";
+import BannerOnSale from "../BannerOnSale"
 
 export default props => {
-  const banner = props.showSaleBage
-    ? <span className="item-badge-sale">sale</span>
+  const banner = props.isOnSale
+    ? <BannerOnSale />
     : undefined;
   const costClass = classNames("item-cost", {
-    "sale-cost": props.showSaleBage
+    "sale-cost": props.isOnSale
   });
-  const linkTo = props.link ? "/shoe" : "#";
 
   return (
     <div className="item">
-      <Link className="item-link" to={linkTo} href="#">
+      <Link className="item-link" to={{pathname: props.to}} >
         <div className="item-img">
           <img src={props.imageUrl} alt={props.imageAlt} />
           {banner}

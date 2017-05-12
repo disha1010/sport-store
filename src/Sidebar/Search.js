@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+
 const search = require(`../image/search.png`);
 
 export default () => {

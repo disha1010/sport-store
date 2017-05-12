@@ -1,5 +1,5 @@
 import React from "react";
-import Properties from "./Properties";
+import Info from "./Info";
 const itemPic1 = require(`../image/item-pic-1.png`);
 const itemPic2 = require(`../image/item-pic-2.png`);
 const itemPic3 = require(`../image/item-pic-3.png`);
@@ -9,7 +9,7 @@ const itemPicFull = require(`../image/item-pic-full.png`);
 export default () => {
   return (
     <div className="item-container">
-      <Properties />
+      <Info />
       <div className="item-zoom-img">
         <img src={itemPicFull} alt="shoes big image.png" />
       </div>
