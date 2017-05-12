@@ -1,0 +1,20 @@
+@font-face { 
+  font-family: 'Avenir next';
+  src: url('fonts/AvenirNext-Bold-Font.ttf'); 
+  src: url('fonts/avenir-next-bold.woff');
+} 
+@font-face { 
+  font-family: 'AndaleMono';
+  src: url('fonts/AndaleMono.ttf'); 
+  src: url('fonts/andalemono.woff');
+}
+@font-face { 
+  font-family: 'Avenir next medium';
+  src: url('fonts/AvenirNext-Medium.ttf'); 
+  src: url('fonts/avenir-next-medium.woff');
+} 
+@font-face {
+  font-family: "San Francisco";
+  src: url("fonts/SanFranciscoThin.ttf");
+  src: url('fonts/sanfranciscothin.woff');
+}

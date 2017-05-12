@@ -1,0 +1,66 @@
+.sidebar {
+  min-width: 414px;
+  background-color: #000;
+  padding-top: 30px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+}
+.content {
+  height: 100%;
+  left: 414px;
+  position: relative;
+}
+.search-field {
+  display: flex;
+  border-bottom: 4px solid rgba(55,55,55,0.56);
+  width: 370px;
+  margin: 0 auto;
+  padding-top: 21px;
+}
+.search-field .icon-search {
+  width: 28px;
+  height: 30px;
+  padding-bottom: 10px;
+  padding-left: 14px;
+}
+.search-field .text-search {
+  background-color: #000;
+  border: none;
+  width: 300px;
+  padding-right: 14px;
+  padding-left: 14px;
+}
+.text-search:focus, 
+.filter-button-text:focus{
+  border: none;
+  outline: none;
+}
+.menu {
+  font-size: 24px;
+  font-family: 'Avenir next';
+  text-transform: uppercase;
+  padding-top: 150px;
+  text-align: center;
+}
+.menu > .menu-item{
+  padding-top: 30px;
+}
+.menu-item {
+  text-decoration: none;
+  color: #3c3c3c;
+  display: block;
+}
+.submenu-title .menu-item {
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+}
+.active {
+  color: #fff;
+}
+.menu-item:hover {
+  color: #fff;
+}

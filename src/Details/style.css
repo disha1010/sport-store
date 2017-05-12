@@ -1,0 +1,171 @@
+/*Details*/
+.item-title {
+  text-transform: uppercase;
+  font-size: 64px;
+  font-family: 'Avenir next';
+  text-align: left;
+  color: #3a3a3a;
+  display: inline-block;
+  width: 226px;
+  margin: 0px;
+  position: absolute;
+  top: 21px;
+}
+.item-price {
+  text-transform: uppercase;
+  font-size: 80px;
+  font-family: 'Avenir next';
+  color: #e2e2e2;
+  position: absolute;
+  top: 87px;
+  right: 31px;
+  margin: 0px;
+}
+.button-color:focus,
+.button-save:focus,
+.button-buy:focus,
+.button-img:focus {
+  border: none;
+  outline: none;
+}
+.text-search[value] {
+  text-transform: uppercase;
+  font-family: 'Avenir next';
+  font-size: 24px;
+  color: #3a3a3a;
+  padding-bottom: 5px;
+}
+#item-view .content {
+  padding: 0px;
+}
+.item-container {
+  padding: 26px 37px 134px 31px;
+  position: relative;
+}
+.item-properties .item-badge-sale {
+  position: absolute;
+  top: 35px;
+  right: 37px;
+}
+.item-colors-container {
+  position: absolute;
+  top: 43px;
+  right: 143px;
+}
+.button-color {
+  cursor: pointer;
+  border: none;
+  padding: 0px;
+  background: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-left: 13px;
+}
+.gray {
+  background-color: #e0e0e0; 
+}
+.blue {
+  background-color: #4d87ca; 
+}
+.dark-gray {
+  background-color: #4a4a4a; 
+}
+.light-gray {
+  background-color: #c5c5c5; 
+}
+.item-save-container {
+  position: absolute;
+  top: 168px;
+}
+.button-save {
+  cursor: pointer;
+  border: none;
+  padding: 0px;
+  background: none;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: #e3e3e3;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Avenir next';
+  text-transform: uppercase;
+}
+.item-zoom-img {
+  z-index: -1;
+  margin-top: 18px;
+  margin-left: 43px;
+}
+.item-zoom-img img {
+  width: 804px;
+  height: 525px;
+}
+.item-details {
+  display: flex;
+  align-items: center;
+}
+.button-img {
+  cursor: pointer;  
+  border: none;
+  padding: 0px;
+  background: none;
+}
+.item-imgs-see-more-container .button-img {
+  width: 46px;
+  height: 54px;
+  display: block;
+  font-size: 14px;
+  text-align: left;
+  color: #c0c0c0;
+  font-family: 'San Francisco';
+}
+.item-imgs-expand {
+  width: 159px;
+  margin-left: 28px;
+  margin-right: 28px;
+}
+.item-imgs-expand .horizontal-line {
+  height: 3px;
+  border: none;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding: 0px;
+  border-radius: 1.5px;
+  background-color: #e7e7e7;
+}
+.item-description {
+  color: #d8d8d8;
+  font-size: 33px;
+  font-family: 'Avenir next medium';
+  margin-top: 29px;
+  margin-bottom: 0px;
+  line-height: 1.52;
+}
+.accent {
+  color: #6e6e6e
+}
+.item-buy-container{
+  height: 114px;
+  background-image: linear-gradient(to right, #4949aa, #27275d);
+  display: flex;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  position: fixed;
+  left: 414px;
+  bottom: 0px;
+  right: 0px;
+  z-index: 5;
+}
+.button-buy {
+  display: block;
+  cursor: pointer;
+  border: none;
+  padding: 0px;
+  background: none;
+  font-family: 'Avenir next';
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #fff;
+}
