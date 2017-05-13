@@ -11,21 +11,21 @@ export default () => {
     <div className="item-container">
       <Info />
       <div className="item-zoom-img">
-        <img src={itemPicFull} alt="shoes big image.png" />
+        <img src={itemPicFull} alt="shoes big" />
       </div>
       <div className="item-details">
         <div className="item-img-container">
           <button className="button-img">
-            <img src={itemPic1} alt="shoes slide image" />
+            <img src={itemPic1} alt="shoes slide" />
           </button>
           <button className="button-img">
-            <img src={itemPic2} alt="shoes slide image" />
+            <img src={itemPic2} alt="shoes slide" />
           </button>
           <button className="button-img">
-            <img src={itemPic3} alt="shoes slide image" />
+            <img src={itemPic3} alt="shoes slide" />
           </button>
           <button className="button-img">
-            <img src={itemPic4} alt="shoes slide image" />
+            <img src={itemPic4} alt="shoes slide" />
           </button>
         </div>
         <div className="item-imgs-expand">

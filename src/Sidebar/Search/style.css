@@ -1,0 +1,25 @@
+.search-field {
+  display: flex;
+  border-bottom: 4px solid rgba(55,55,55,0.56);
+  width: 370px;
+  margin: 0 auto;
+  padding-top: 21px;
+}
+.search-field .icon-search {
+  width: 28px;
+  height: 30px;
+  padding-bottom: 10px;
+  padding-left: 14px;
+}
+.search-field .text-search {
+  background-color: #000;
+  border: none;
+  width: 300px;
+  padding-right: 14px;
+  padding-left: 14px;
+}
+.text-search:focus, 
+.filter-button-text:focus{
+  border: none;
+  outline: none;
+}

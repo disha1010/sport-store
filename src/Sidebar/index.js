@@ -2,14 +2,14 @@ import React from "react";
 import Menu from "./Menu"
 import Search from "./Search"
 import Logo from "./Logo"
-import "./style.css";
+import {Aside} from "./styled"
 
 export default () => {
   return (
-    <aside className="sidebar">
+    <Aside>
       <Logo />
       <Search />
       <Menu />
-    </aside>
+    </Aside>
   );
 };

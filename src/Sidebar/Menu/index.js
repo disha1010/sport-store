@@ -1,5 +1,6 @@
 import React from "react";
 import Submenu from "./Submenu"
+import "./style.css"
 
 export default () => {
   return (

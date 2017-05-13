@@ -1,0 +1,26 @@
+.menu {
+  font-size: 24px;
+  font-family: 'Avenir next';
+  text-transform: uppercase;
+  padding-top: 150px;
+  text-align: center;
+}
+.menu > .menu-item{
+  padding-top: 30px;
+}
+.menu-item {
+  text-decoration: none;
+  color: #3c3c3c;
+  display: block;
+}
+.submenu-title .menu-item {
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+}
+.active {
+  color: #fff;
+}
+.menu-item:hover {
+  color: #fff;
+}
