@@ -6,10 +6,17 @@ import { Col } from "react-flexbox-grid";
 const shoes = require(`../image/shoes.png`);
 const shoes2 = require(`../image/shoes2.png`);
 const shoes3 = require(`../image/shoes3.png`);
+import styled from 'styled-components';
+
+export const Wrapper = styled.div`
+  padding-top: 22px;
+  padding-left: 24px;
+  padding-right: 24px;
+`;
 
 export default () => {
   return (
-    <div className="goods-gallery">
+    <Wrapper>
       <Grid fluid>
         <Row>
           <Col md={4}>
@@ -63,6 +70,6 @@ export default () => {
           </Col>
         </Row>
       </Grid>
-    </div>
+    </Wrapper>
   );
 };
