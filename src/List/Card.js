@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import classNames from "classnames/bind";
-import BannerOnSale from "../BannerOnSale"
+import LableOnSale from "../LableOnSale"
 
 export default props => {
   const banner = props.isOnSale
-    ? <BannerOnSale />
+    ? <LableOnSale />
     : undefined;
   const costClass = classNames("item-cost", {
     "sale-cost": props.isOnSale

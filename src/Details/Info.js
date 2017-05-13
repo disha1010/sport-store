@@ -1,5 +1,5 @@
 import React from "react";
-import BannerOnSale from "../BannerOnSale"
+import LableOnSale from "../LableOnSale"
 
 export default () => {
   return (
@@ -11,7 +11,7 @@ export default () => {
         <button className="button-color dark-gray" />
         <button className="button-color light-gray" />
       </div>
-      <BannerOnSale />
+      <LableOnSale />
       <h2 className="item-price">190$</h2>
       <div className="item-save-container">
         <button className="button-save">save</button>
