@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import { Row, Col } from 'react-flexbox-grid';
 import Card from './Card';
 
-const shoes = require('../../image/shoes.png');
-const shoes2 = require('../../image/shoes2.png');
-const shoes3 = require('../../image/shoes3.png');
+import shoes from '../../image/shoes.png';
+import shoes2 from '../../image/shoes2.png';
+import shoes3 from '../../image/shoes3.png';
 
 const Wrapper = styled.div`
   padding-top: 22px;

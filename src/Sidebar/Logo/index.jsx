@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Wrapper from './styled';
 
-const logo = require('../../image/logo.png');
+import logo from '../../image/logo.png';
 
 export default () => (
   <Wrapper>
