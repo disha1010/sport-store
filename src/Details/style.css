@@ -34,11 +34,12 @@
   color: #3a3a3a;
   padding-bottom: 5px;
 }
-.item-properties .item-badge-sale {
+
+/*.item-properties .item-badge-sale {
   position: absolute;
   top: 35px;
   right: 37px;
-}
+}*/
 .item-colors-container {
   position: absolute;
   top: 43px;

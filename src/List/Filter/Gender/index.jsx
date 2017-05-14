@@ -1,9 +1,10 @@
 import React from 'react';
 import Wrapper from './styled';
+import { Button } from '../styled';
 
 export default () => (
   <Wrapper>
-    <button className="filter-button-text filter-button-active">man</button>
-    <button className="filter-button-text">women</button>
+    <Button isActive>man</Button>
+    <Button>women</Button>
   </Wrapper>
 );

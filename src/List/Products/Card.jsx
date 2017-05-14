@@ -1,24 +1,24 @@
 import React from 'react';
+import cn from 'classnames/bind';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
-import classNames from 'classnames/bind';
-import LableOnSale from '../LableOnSale';
+import { Wrapper, StyledLink, ImageWrapper } from './styled';
+import LabelOnSale from '../../LabelOnSale';
 
 const Card = (props) => {
-  const costClass = classNames('item-cost', {
+  const costClass = cn('item-cost', {
     'sale-cost': props.isOnSale,
   });
 
   return (
-    <div className="item">
-      <Link className="item-link" to={{ pathname: props.to }}>
-        <div className="item-img">
+    <Wrapper>
+      <StyledLink to={{ pathname: props.to }}>
+        <ImageWrapper>
           <img src={props.imageUrl} alt={props.imageAlt} />
-          {props.isOnSale ? <LableOnSale /> : null}
-        </div>
+          {props.isOnSale && <LabelOnSale />}
+        </ImageWrapper>
         <div className={costClass}>{props.cost}$</div>
-      </Link>
-    </div>
+      </StyledLink>
+    </Wrapper>
   );
 };
 

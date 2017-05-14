@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import Filter from './Filter';
-import List from './List';
+import Products from './Products';
 import './style.css';
 
-export const Wrapper = styled.div`
+const Wrapper = styled.div`
   width: calc(100% - 414px);
   position: relative;
   left: 414px;
@@ -13,6 +13,6 @@ export const Wrapper = styled.div`
 export default () => (
   <Wrapper>
     <Filter />
-    <List />
+    <Products />
   </Wrapper>
 );

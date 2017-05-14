@@ -1,6 +1,6 @@
 import React from 'react';
 
-const filter = require('../../image/filter.png');
+const filter = require('../../../image/filter.png');
 
 export default () => (
   <div className="filter-button-container">

@@ -4,7 +4,7 @@ import Content from './Content';
 import Button from './Button';
 import './style.css';
 
-export const Wrapper = styled.div`
+const Wrapper = styled.div`
   width: calc(100% - 414px);
   position: relative;
   left: 414px;

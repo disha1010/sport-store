@@ -1,12 +1,14 @@
 import React from 'react';
-import Sizes from './Sizes';
-import Gender from './Gender';
+
+import { Wrapper } from './styled';
 import Icon from './Icon';
+import Gender from './Gender';
+import Sizes from './Sizes';
 
 export default () => (
-  <div className="filter">
+  <Wrapper>
     <Icon />
     <Gender />
     <Sizes />
-  </div>
-);
+  </Wrapper>
+  );

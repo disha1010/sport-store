@@ -1,11 +1,11 @@
 import React from 'react';
 import Submenu from './Submenu';
-import './style.css';
+import { Nav, MenuLink } from './styled';
 
 export default () => (
-  <nav className="menu">
+  <Nav>
     <Submenu />
-    <a className="menu-item" href="">brands</a>
-    <a className="menu-item" href="">micoach</a>
-  </nav>
+    <MenuLink to="">brands</MenuLink>
+    <MenuLink to="">micoach</MenuLink>
+  </Nav>
   );

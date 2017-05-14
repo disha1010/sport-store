@@ -1,5 +1,5 @@
 import React from 'react';
-import LableOnSale from '../../LableOnSale';
+import LabelOnSale from '../../LabelOnSale';
 
 export default () => (
   <div className="item-properties">
@@ -10,10 +10,10 @@ export default () => (
       <button className="button-color dark-gray" />
       <button className="button-color light-gray" />
     </div>
-    <LableOnSale />
+    <LabelOnSale isDetails />
     <h2 className="item-price">190$</h2>
     <div className="item-save-container">
       <button className="button-save">save</button>
     </div>
   </div>
-  );
+);

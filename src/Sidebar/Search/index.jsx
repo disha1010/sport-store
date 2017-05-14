@@ -1,11 +1,12 @@
 import React from 'react';
-import './style.css';
+// import { Grid, Row, Col } from 'react-flexbox-grid';
+import { Wrapper, Icon, Input } from './styled';
 
 const search = require('../../image/search.png');
 
 export default () => (
-  <div className="search-field center-md">
-    <img className="icon-search" src={search} alt="search-icon" />
-    <input className="text-search" type="text" name="search" />
-  </div>
-  );
+  <Wrapper center="md">
+    <Icon src={search} alt="search-icon" />
+    <Input type="text" name="search" />
+  </Wrapper>
+);
