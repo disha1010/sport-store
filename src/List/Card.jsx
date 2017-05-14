@@ -23,13 +23,14 @@ const Card = (props) => {
 };
 
 Card.propTypes = {
-  to: PropTypes.string.isRequired,
+  to: PropTypes.string,
   imageUrl: PropTypes.string,
   imageAlt: PropTypes.string,
   isOnSale: PropTypes.bool,
   cost: PropTypes.number.isRequired,
 };
 Card.defaultProps = {
+  to: '',
   imageUrl: '',
   imageAlt: '',
   isOnSale: false,

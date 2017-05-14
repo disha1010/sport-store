@@ -6,7 +6,6 @@ import './style.css';
 
 export const Wrapper = styled.div`
   width: calc(100% - 414px);
-  overflow-x: hidden;
   position: relative;
   left: 414px;
 `;

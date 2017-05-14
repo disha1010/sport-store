@@ -38,12 +38,6 @@
 .filter-button-text.filter-button-active {
   color: #4d42f8;
 }
-/*.filter-row-gender{
-  padding-left: 30px;
-  width: 180px;
-  display: flex;
-  justify-content: space-between;
-}*/
 .filter-row-sizes {
   padding-left: 50px;
   display: flex;
