@@ -1,19 +1,19 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import classNames from "classnames/bind";
-import LableOnSale from "../LableOnSale"
+import React from 'react';
+import { Link } from 'react-router-dom';
+import classNames from 'classnames/bind';
+import LableOnSale from '../LableOnSale';
 
-export default props => {
+export default (props) => {
   const banner = props.isOnSale
     ? <LableOnSale />
     : undefined;
-  const costClass = classNames("item-cost", {
-    "sale-cost": props.isOnSale
+  const costClass = classNames('item-cost', {
+    'sale-cost': props.isOnSale,
   });
 
   return (
     <div className="item">
-      <Link className="item-link" to={{pathname: props.to}} >
+      <Link className="item-link" to={{ pathname: props.to }} >
         <div className="item-img">
           <img src={props.imageUrl} alt={props.imageAlt} />
           {banner}

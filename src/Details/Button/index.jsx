@@ -1,5 +1,5 @@
 import React from 'react';
-import {Wrapper, Button} from "./styled"
+import { Wrapper, Button } from './styled';
 
 export default () => (
   <Wrapper>

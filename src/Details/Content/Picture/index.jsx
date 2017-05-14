@@ -1,5 +1,5 @@
 import React from 'react';
-import {Wrapper, Image} from "./styled"
+import { Wrapper, Image } from './styled';
 
 const itemPicFull = require('../../../image/item-pic-full.png');
 
