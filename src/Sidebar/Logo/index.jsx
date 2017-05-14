@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Wrapper } from './styled';
+import Wrapper from './styled';
 
 const logo = require('../../image/logo.png');
 
@@ -10,4 +10,4 @@ export default () => (
       <img src={logo} alt="adidas-logo.png" />
     </Link>
   </Wrapper>
-  );
+);

@@ -1,12 +1,11 @@
 import React from 'react';
+import styled from 'styled-components';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 import Card from './Card';
-import { Grid } from 'react-flexbox-grid';
-import { Row } from 'react-flexbox-grid';
-import { Col } from 'react-flexbox-grid';
+
 const shoes = require('../image/shoes.png');
 const shoes2 = require('../image/shoes2.png');
 const shoes3 = require('../image/shoes3.png');
-import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   padding-top: 22px;

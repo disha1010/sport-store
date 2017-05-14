@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Aside = styled.aside`
+export default styled.aside`
   min-width: 414px;
   background-color: #000;
   padding-top: 30px;

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
+export default styled.div`
   padding-left: 30px;
   width: 180px;
   display: flex;

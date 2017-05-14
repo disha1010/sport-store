@@ -1,4 +1,5 @@
 import React from 'react';
+
 const filter = require('../../image/filter.png');
 
 export default () => (
@@ -7,4 +8,4 @@ export default () => (
       <img src={filter} alt="filter-icon.png" />
     </button>
   </div>
-  );
+);

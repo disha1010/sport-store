@@ -5,7 +5,7 @@ import './style.css';
 export default () => (
   <nav className="menu">
     <Submenu />
-    <a className="menu-item" href="#">brands</a>
-    <a className="menu-item" href="#">micoach</a>
+    <a className="menu-item" href="">brands</a>
+    <a className="menu-item" href="">micoach</a>
   </nav>
   );

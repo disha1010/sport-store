@@ -1,4 +1,5 @@
 import React from 'react';
+
 const itemPic1 = require('../../image/item-pic-1.png');
 const itemPic2 = require('../../image/item-pic-2.png');
 const itemPic3 = require('../../image/item-pic-3.png');
