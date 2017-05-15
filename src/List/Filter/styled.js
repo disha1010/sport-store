@@ -7,6 +7,12 @@ export const Wrapper = styled.div`
   padding-bottom: 11px;
   padding-top: 11px;
   border-bottom: 3px solid rgba(231,231,231,0.56);
+  @media screen and (max-width: 414px) {
+    padding-left: 15px;
+    padding-bottom: 15px;
+  padding-top: 15px;
+    display: block;
+  }
 `;
 export const Button = styled.button`
   cursor: pointer;

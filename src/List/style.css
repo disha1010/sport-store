@@ -1,12 +1,3 @@
-.filter-button-container {
-  background-color: #ebebeb;
-  width: 40px;
-  height: 33px;
-  padding-top: 11px;
-  padding-bottom: 11px;
-  padding-right: 7px;
-  padding-left: 8px;
-}
 .filter-button-icon {
   cursor: pointer;
   border: none;
@@ -19,19 +10,6 @@
 }
 .filter-button-text.filter-button-active {
   color: #4d42f8;
-}
-.filter-row-sizes {
-  padding-left: 50px;
-  display: flex;
-  align-items: center;
-}
-.filter-row-title{
-  text-transform: uppercase;
-  font-size: 24px;
-  padding-right: 18px;
-  font-family: 'Avenir next';
-  color: #4d42f8;
-  background-color: #fff;
 }
 .filter-row-values {
   width: 254px;

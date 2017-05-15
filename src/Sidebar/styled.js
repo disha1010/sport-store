@@ -13,4 +13,11 @@ export default styled.aside`
   @media screen and (max-width: 1024px) {
     width: 327px;
   }
+  @media screen and (max-width: 414px) {
+    width: 414px;
+    height: 64px;
+    top: 0;
+    position: relative;
+    padding: 0px;
+  }
 `;
