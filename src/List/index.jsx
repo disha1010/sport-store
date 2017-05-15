@@ -8,6 +8,15 @@ const Wrapper = styled.div`
   width: calc(100% - 414px);
   position: relative;
   left: 414px;
+  @media screen and (max-width: 1024px) {
+    width: calc(100% - 327px);
+    left: 327px;
+  }
+  @media screen and (max-width: 414px) {
+    width: 414px;
+    position: relative;
+    left: 0px;
+  }
 `;
 
 export default () => (

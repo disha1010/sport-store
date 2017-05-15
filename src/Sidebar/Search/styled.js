@@ -6,6 +6,12 @@ export const Wrapper = styled.div`
   width: 370px;
   margin: 0 auto;
   padding-top: 21px;
+  @media screen and (max-width: 1024px) {
+    width: 290px;
+  }
+  @media screen and (max-width: 414px) {
+    display:none;
+  }
 `;
 export const Icon = styled.img`
   width: 28px;

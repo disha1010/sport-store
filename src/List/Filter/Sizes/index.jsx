@@ -1,9 +1,10 @@
 import React from 'react';
+import { Wrapper, Title } from './styled';
 import { Button } from '../styled';
 
 export default () => (
-  <div className="filter-row-sizes">
-    <span className="filter-row-title">size</span>
+  <Wrapper>
+    <Title>size</Title>
     <div className="filter-row-values">
       <Button>36</Button>
       <Button>37</Button>
@@ -13,5 +14,5 @@ export default () => (
       <Button isActive>41</Button>
       <Button>42</Button>
     </div>
-  </div>
+  </Wrapper>
 );

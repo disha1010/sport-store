@@ -6,6 +6,9 @@ export const Nav = styled.nav`
   text-transform: uppercase;
   padding-top: 150px;
   text-align: center;
+  @media screen and (max-width: 414px) {
+    display:none;
+  }
 `;
 
 export const MenuLink = styled.a`

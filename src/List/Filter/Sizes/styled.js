@@ -1,17 +1,19 @@
 import styled from 'styled-components';
 
-export default styled.div`
-  width: 76px;
-  height: 32px;
-  background-color: #ff5c5c;
-  color: #fff;
-  font-size: 14px;
-  font-family: 'Avenir next';
-  text-transform: uppercase;
+export const Wrapper = styled.div`
+  padding-left: 50px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  position: absolute;
-  top: ${props => (props.isDetails ? '35px' : '8px')};
-  right: ${props => (props.isDetails ? '37px' : '8px')};
+  @media screen and (max-width: 414px) {
+    padding-left: 0px;
+  }
+`;
+
+export const Title = styled.span`
+  text-transform: uppercase;
+  font-size: 24px;
+  padding-right: 18px;
+  font-family: 'Avenir next';
+  color: #4d42f8;
+  background-color: #fff;
 `;

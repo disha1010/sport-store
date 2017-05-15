@@ -8,4 +8,12 @@ export default styled.div`
   padding-left: 9px;
   padding-right: 9px;
   margin: 0 auto;
+  @media screen and (max-width: 414px) {
+    width: 52px;
+    height: 52px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    margin: 0;
+  }
 `;
