@@ -2,7 +2,7 @@ import React from 'react';
 
 import Wrapper from './styled';
 
-import filterIcon from '../../../image/filter.png';
+import filterIcon from './filter.png';
 
 export default () => (
   <Wrapper>
