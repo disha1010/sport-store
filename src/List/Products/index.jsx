@@ -16,7 +16,7 @@ const Wrapper = styled.div`
 export default () => (
   <Wrapper>
     <Row>
-      <Col md={4}>
+      <Col sm={6} md={4}>
         <Card
           imageUrl={shoes}
           imageAlt={'shoes.png'}
@@ -24,7 +24,7 @@ export default () => (
           cost={170}
         />
       </Col>
-      <Col md={4}>
+      <Col sm={6} md={4}>
         <Card
           imageUrl={shoes2}
           imageAlt={'shoes2.png'}
@@ -32,7 +32,7 @@ export default () => (
           cost={230}
         />
       </Col>
-      <Col md={4}>
+      <Col sm={6} md={4}>
         <Card
           imageUrl={shoes3}
           imageAlt={'shoes3.png'}
@@ -41,7 +41,7 @@ export default () => (
           to={'/shoe'}
         />
       </Col>
-      <Col md={4}>
+      <Col sm={6} md={4}>
         <Card
           imageUrl={shoes2}
           imageAlt={'shoes2.png'}
@@ -49,7 +49,7 @@ export default () => (
           cost={170}
         />
       </Col>
-      <Col md={4}>
+      <Col sm={6} md={4}>
         <Card
           imageUrl={shoes3}
           imageAlt={'shoes3.png'}
@@ -57,7 +57,7 @@ export default () => (
           cost={230}
         />
       </Col>
-      <Col md={4}>
+      <Col sm={6} md={4}>
         <Card
           imageUrl={shoes}
           imageAlt={'shoes.png'}
