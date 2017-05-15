@@ -1,5 +1,14 @@
 import React from 'react';
-import { Wrapper, ImageWrapper, Image } from './styled';
+import {
+  Wrapper,
+  ImageWrapper,
+  Image,
+  MoreImages,
+  ButtonImage,
+  Hamburger,
+  HorizontalLine,
+  ButtonSeeMore,
+} from './styled';
 
 import itemPic1 from './item-pic-1.png';
 import itemPic2 from './item-pic-2.png';
@@ -12,29 +21,29 @@ export default () => (
     <ImageWrapper>
       <Image src={itemPicFull} alt="shoes big" />
     </ImageWrapper>
-    <div className="item-details">
+    <MoreImages>
       <div className="item-img-container">
-        <button className="button-img">
+        <ButtonImage>
           <img src={itemPic1} alt="shoes slide" />
-        </button>
-        <button className="button-img">
+        </ButtonImage>
+        <ButtonImage>
           <img src={itemPic2} alt="shoes slide" />
-        </button>
-        <button className="button-img">
+        </ButtonImage>
+        <ButtonImage>
           <img src={itemPic3} alt="shoes slide" />
-        </button>
-        <button className="button-img">
+        </ButtonImage>
+        <ButtonImage>
           <img src={itemPic4} alt="shoes slide" />
-        </button>
+        </ButtonImage>
       </div>
-      <div className="item-imgs-expand">
-        <hr className="horizontal-line" />
-        <hr className="horizontal-line" />
-        <hr className="horizontal-line" />
-      </div>
+      <Hamburger>
+        <HorizontalLine />
+        <HorizontalLine />
+        <HorizontalLine />
+      </Hamburger>
       <div className="item-imgs-see-more-container">
-        <button className="button-img">see more photos</button>
+        <ButtonSeeMore>see more photos</ButtonSeeMore>
       </div>
-    </div>
+    </MoreImages>
   </Wrapper>
 );

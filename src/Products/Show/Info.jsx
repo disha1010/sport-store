@@ -1,19 +1,35 @@
 import React from 'react';
 import LabelOnSale from '../../LabelOnSale';
+import { InfoWrapper, Name, Price, Colors, Save, ButtonSave, ButtonColor } from './styled';
+
+const gray = {
+  main: '#e0e0e0',
+};
+
+const blue = {
+  main: '#4d87ca',
+};
+const darkGray = {
+  main: '#4a4a4a',
+};
+
+const lightGray = {
+  main: '#c5c5c5',
+};
 
 export default () => (
-  <div className="item-properties">
-    <h1 className="item-title">ultra boost</h1>
-    <div className="item-colors-container">
-      <button className="button-color gray" />
-      <button className="button-color blue" />
-      <button className="button-color dark-gray" />
-      <button className="button-color light-gray" />
-    </div>
+  <InfoWrapper>
+    <Name>ultra boost</Name>
+    <Colors>
+      <ButtonColor theme={gray} />
+      <ButtonColor theme={blue} />
+      <ButtonColor theme={darkGray} />
+      <ButtonColor theme={lightGray} />
+    </Colors>
     <LabelOnSale isDetails />
-    <h2 className="item-price">190$</h2>
-    <div className="item-save-container">
-      <button className="button-save">save</button>
-    </div>
-  </div>
+    <Price>190$</Price>
+    <Save>
+      <ButtonSave>save</ButtonSave>
+    </Save>
+  </InfoWrapper>
 );

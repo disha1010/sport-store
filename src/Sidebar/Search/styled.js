@@ -25,6 +25,11 @@ export const Input = styled.input`
   width: 300px;
   padding-right: 14px;
   padding-left: 14px;
+  text-transform: uppercase;
+  font-family: 'Avenir next';
+  font-size: 24px;
+  color: #3a3a3a;
+  padding-bottom: 5px;
   &:focus {
     border: none;
     outline: none;

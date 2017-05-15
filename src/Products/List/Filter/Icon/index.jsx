@@ -1,13 +1,11 @@
 import React from 'react';
-
-import Wrapper from './styled';
-
+import { Wrapper, ButtonIcon } from './styled';
 import filterIcon from './filter.png';
 
 export default () => (
   <Wrapper>
-    <button className="filter-button-icon">
+    <ButtonIcon>
       <img src={filterIcon} alt="filter-icon" />
-    </button>
+    </ButtonIcon>
   </Wrapper>
 );

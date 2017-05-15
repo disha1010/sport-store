@@ -4,7 +4,6 @@ import Info from './Info';
 import Gallery from './Gallery';
 import Description from './Description';
 import BuyButton from './BuyButton';
-import './style.css';
 
 const ProductContainer = styled.div`
   padding: 26px 37px 134px 31px;
@@ -30,4 +29,4 @@ export default () => (
     </ProductContainer>
     <BuyButton />
   </Wrapper>
-  );
+);

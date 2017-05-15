@@ -17,3 +17,9 @@ export const Title = styled.span`
   color: #4d42f8;
   background-color: #fff;
 `;
+
+export const SizeValues = styled.div`
+  width: 254px;
+  display: flex;
+  justify-content: space-between;
+`;

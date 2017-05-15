@@ -1,12 +1,21 @@
 import React from 'react';
-// import { Grid, Row, Col } from 'react-flexbox-grid';
+import PropTypes from 'prop-types';
 import { Wrapper, Icon, Input } from './styled';
 
 import search from './search.png';
 
-export default () => (
+const SearchInput = props => (
   <Wrapper center="md">
     <Icon src={search} alt="search-icon" />
-    <Input type="text" name="search" />
+    <Input type="text" name="search" value={props.value} />
   </Wrapper>
 );
+
+SearchInput.propTypes = {
+  value: PropTypes.string,
+};
+SearchInput.defaultProps = {
+  value: '',
+};
+
+export default SearchInput;

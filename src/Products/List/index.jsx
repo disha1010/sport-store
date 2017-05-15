@@ -1,35 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Row, Col } from 'react-flexbox-grid';
 import Filter from './Filter';
-import Card from './Card';
-
-import './style.css';
+import { Card } from './Card';
+import { Wrapper, GridWrapper } from './styled';
 
 import shoes from './shoes.png';
 import shoes2 from './shoes2.png';
 import shoes3 from './shoes3.png';
-
-const GridWrapper = styled.div`
-  padding-top: 22px;
-  padding-left: 24px;
-  padding-right: 24px;
-`;
-
-const Wrapper = styled.div`
-  width: calc(100% - 414px);
-  position: relative;
-  left: 414px;
-  @media screen and (max-width: 1024px) {
-    width: calc(100% - 327px);
-    left: 327px;
-  }
-  @media screen and (max-width: 414px) {
-    width: 414px;
-    position: relative;
-    left: 0px;
-  }
-`;
 
 export default () => (
   <Wrapper>
