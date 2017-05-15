@@ -1,14 +1,6 @@
+import React from 'react';
 import styled from 'styled-components';
 
-export const ImageWrapper = styled.div`
-  z-index: -1;
-  margin-top: 18px;
-  margin-left: 43px;
-`;
-export const Image = styled.img`
-  width: 804px;
-  height: 525px;
-`;
 export const Text = styled.div`
   color: #d8d8d8;
   font-size: 33px;
@@ -21,3 +13,12 @@ export const Text = styled.div`
 export const Accent = styled.span`
   color: #6e6e6e
 `;
+
+export default () => (
+  <Text>
+    <Accent>Adidas</Accent>
+    {' '}
+    is a German multinational corporation, headquartered in Herzogenaurach, Germany,
+    that designs and manufactures shoes, clothing and accessories.
+  </Text>
+);

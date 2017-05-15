@@ -1,6 +1,7 @@
+import React from 'react';
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
+const Wrapper = styled.div`
   height: 114px;
   background-image: linear-gradient(to right, #4949aa, #27275d);
   display: flex;
@@ -12,8 +13,12 @@ export const Wrapper = styled.div`
   bottom: 0px;
   right: 0px;
   z-index: 5;
+  @media screen and (max-width: 1024px) {
+    width: calc(100% - 327px);
+    left: 327px;
+  }
 `;
-export const Button = styled.button`
+const Button = styled.button`
   display: block;
   cursor: pointer;
   border: none;
@@ -28,3 +33,9 @@ export const Button = styled.button`
     outline: none;
   }
 `;
+
+export default () => (
+  <Wrapper>
+    <Button>buy now</Button>
+  </Wrapper>
+  );
