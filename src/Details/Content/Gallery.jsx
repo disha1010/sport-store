@@ -1,9 +1,9 @@
 import React from 'react';
 
-const itemPic1 = require('../../image/item-pic-1.png');
-const itemPic2 = require('../../image/item-pic-2.png');
-const itemPic3 = require('../../image/item-pic-3.png');
-const itemPic4 = require('../../image/item-pic-4.png');
+import itemPic1 from '../../image/item-pic-1.png';
+import itemPic2 from '../../image/item-pic-2.png';
+import itemPic3 from '../../image/item-pic-3.png';
+import itemPic4 from '../../image/item-pic-4.png';
 
 export default () => (
   <div className="item-details">

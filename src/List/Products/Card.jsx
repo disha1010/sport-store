@@ -11,7 +11,7 @@ const Card = (props) => {
 
   return (
     <Wrapper>
-      <StyledLink to={{ pathname: props.to }}>
+      <StyledLink to={props.to}>
         <ImageWrapper>
           <img src={props.imageUrl} alt={props.imageAlt} />
           {props.isOnSale && <LabelOnSale />}

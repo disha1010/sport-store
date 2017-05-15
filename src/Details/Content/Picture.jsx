@@ -1,7 +1,7 @@
 import React from 'react';
 import { ImageWrapper, Image } from './styled';
 
-const itemPicFull = require('../../image/item-pic-full.png');
+import itemPicFull from '../../image/item-pic-full.png';
 
 export default () => (
   <ImageWrapper>
