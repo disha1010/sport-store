@@ -9,7 +9,6 @@ export default styled.aside`
   top: 0;
   bottom: 0;
   position: fixed;
-
   @media screen and (max-width: 1024px) {
     width: 327px;
   }

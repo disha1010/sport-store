@@ -13,9 +13,13 @@ const Wrapper = styled.div`
   bottom: 0px;
   right: 0px;
   z-index: 5;
-  @media screen and (max-width: 1024px) {
+  @media screen and  (max-width: 1024px) {
     width: calc(100% - 327px);
     left: 327px;
+  }
+  @media screen and (max-width: 414px) {
+    width: 100%;
+    left: 0px;
   }
 `;
 const Button = styled.button`

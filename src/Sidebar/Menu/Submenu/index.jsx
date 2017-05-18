@@ -1,17 +1,26 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Icon from './Icon';
 import { Nav, SubmenuLink, SubmenuTitle } from './styled';
 
-export default () => (
+export const SubMenu = props => (
   <div className="submenu">
-    <div className="submenu-title active">
-      <SubmenuTitle isActive>sports</SubmenuTitle>
+    <div>
+      <SubmenuTitle>{props.menuTitle}</SubmenuTitle>
       <Icon />
     </div>
     <Nav>
-      <SubmenuLink isActive>shoes</SubmenuLink>
+      <SubmenuLink>shoes</SubmenuLink>
       <SubmenuLink>clothing</SubmenuLink>
       <SubmenuLink>accesories</SubmenuLink>
     </Nav>
   </div>
 );
+
+SubMenu.propTypes = {
+  menuTitle: PropTypes.string,
+};
+SubMenu.defaultProps = {
+  menuTitle: '',
+};
+export default SubMenu;

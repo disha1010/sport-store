@@ -8,6 +8,10 @@ export const Text = styled.div`
   margin-top: 29px;
   margin-bottom: 0px;
   line-height: 1.52;
+  @media screen and (max-width: 414px) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
 `;
 
 export const Accent = styled.span`

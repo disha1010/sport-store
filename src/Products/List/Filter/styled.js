@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
   @media screen and (max-width: 414px) {
     padding-left: 15px;
     padding-bottom: 15px;
-  padding-top: 15px;
+    padding-top: 15px;
     display: block;
   }
 `;

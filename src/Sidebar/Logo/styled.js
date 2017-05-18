@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export default styled.div`
+export const Wrapper = styled.div`
   width: 77px;
   height: 52px;
   padding-top: 21px;
@@ -15,5 +15,12 @@ export default styled.div`
     padding-bottom: 6px;
     padding-left: 10px;
     margin: 0;
+  }
+`;
+export const Image = styled.img`
+  @media screen and (max-width: 414px) {
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 9px;
   }
 `;

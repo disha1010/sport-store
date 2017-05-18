@@ -4,7 +4,7 @@ import { Wrapper, Icon, Input } from './styled';
 
 import search from './search.png';
 
-const SearchInput = props => (
+export const SearchInput = props => (
   <Wrapper center="md">
     <Icon src={search} alt="search-icon" />
     <Input type="text" name="search" value={props.value} />

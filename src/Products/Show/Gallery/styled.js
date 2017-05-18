@@ -10,8 +10,17 @@ export const ImageWrapper = styled.div`
   margin-left: 43px;
 `;
 export const Image = styled.img`
-  width: 804px;
-  height: 525px;
+  width: auto;
+  @media screen and (max-width: 414px) {
+    width: 100%;
+  }
+`;
+export const Slide = styled.img`
+  width: auto;
+  @media screen and (max-width: 414px) {
+    width: auto;
+    height: 50px;
+  }
 `;
 export const MoreImages = styled.div`
   display: flex;
@@ -27,6 +36,9 @@ export const Hamburger = styled.div`
   width: 159px;
   margin-left: 28px;
   margin-right: 28px;
+  @media screen and (max-width: 414px) {
+    display: none;
+  }
 `;
 export const HorizontalLine = styled.div`
   height: 3px;
@@ -49,4 +61,9 @@ export const ButtonSeeMore = styled.button`
   text-align: left;
   color: #c0c0c0;
   font-family: 'San Francisco';
+`;
+export const SeeMore = styled.div`
+  @media screen and (max-width: 414px) {
+    display: none;
+  }
 `;

@@ -7,7 +7,7 @@ export default () => (
     height="9"
     viewBox="0 0 14 9"
   >
-    <g fill="#FFF" fillRule="evenodd">
+    <g fill="#3c3c3c" fillRule="evenodd">
       <rect
         width="3"
         height="9"

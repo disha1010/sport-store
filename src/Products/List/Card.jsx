@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import LabelOnSale from '../../LabelOnSale';
-import { CardWrapper, StyledLink, ImageWrapper, Cost } from './styled';
+import { CardWrapper, StyledLink, ImageWrapper, Cost, Image } from './styled';
 
 export const Card = props => (
   <CardWrapper>
     <StyledLink to={props.to}>
       <ImageWrapper>
-        <img src={props.imageUrl} alt={props.imageAlt} />
+        <Image src={props.imageUrl} alt={props.imageAlt} />
         {props.isOnSale && <LabelOnSale />}
       </ImageWrapper>
-      <Cost {...props}>{props.cost}$</Cost>
+      <Cost isPurpleBackground={props.isOnSale}>{props.cost}$</Cost>
     </StyledLink>
   </CardWrapper>
 );

@@ -20,6 +20,7 @@ const lightGray = {
 export default () => (
   <InfoWrapper>
     <Name>ultra boost</Name>
+    <Price>190$</Price>
     <Colors>
       <ButtonColor theme={gray} />
       <ButtonColor theme={blue} />
@@ -27,7 +28,6 @@ export default () => (
       <ButtonColor theme={lightGray} />
     </Colors>
     <LabelOnSale isDetails />
-    <Price>190$</Price>
     <Save>
       <ButtonSave>save</ButtonSave>
     </Save>

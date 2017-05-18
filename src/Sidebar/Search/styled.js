@@ -34,4 +34,7 @@ export const Input = styled.input`
     border: none;
     outline: none;
   }
+  @media screen and (max-width: 1024px) {
+    width: 200px;
+  }
 `;

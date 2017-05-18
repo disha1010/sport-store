@@ -1,11 +1,13 @@
 import React from 'react';
 import Submenu from './Submenu';
-import { Nav, MenuLink } from './styled';
+
+import Nav from './styled';
 
 export default () => (
   <Nav>
-    <Submenu />
-    <MenuLink to="">brands</MenuLink>
-    <MenuLink to="">micoach</MenuLink>
+    <Submenu menuTitle={'sports'} />
+    <Submenu menuTitle={'brands'} />
+    <Submenu menuTitle={'micoach'} />
   </Nav>
-  );
+);
+

@@ -21,5 +21,9 @@ export const SubmenuLink = styled.a`
 export const SubmenuTitle = styled.div`
   display: inline-block;
   vertical-align: middle;
-  color: #fff;
+  text-decoration: none;
+  color: #3c3c3c;
+  &:hover {
+    color: #fff;
+  }
 `;
