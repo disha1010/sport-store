@@ -15,7 +15,7 @@ export const Name = styled.h1`
   width: 226px;
   margin: 0px;
   position: absolute;
-  top: 21px;
+  top: 25px;
   @media screen and (max-width: 414px) {
     font-size: 32px;
     width: 100%;
@@ -29,7 +29,7 @@ export const Price = styled.h2`
   font-family: 'Avenir next';
   color: #e2e2e2;
   position: absolute;
-  top: 87px;
+  top: 77px;
   right: 31px;
   margin: 0px;
   @media screen and (max-width: 414px) {
@@ -39,8 +39,8 @@ export const Price = styled.h2`
 `;
 export const Colors = styled.div`
   position: absolute;
-  top: 43px;
-  right: 143px;
+  top: 32px;
+  right: 136px;
   @media screen and (max-width: 414px) {
     float: right;
     position: static;
@@ -59,7 +59,7 @@ export const ButtonColor = styled.button`
   cursor: pointer;
   border: none;
   padding: 0px;
-  background: ${props => props.theme.main};
+  background: ${props => props.color};
   width: 18px;
   height: 18px;
   border-radius: 50%;

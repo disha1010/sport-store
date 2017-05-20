@@ -6,7 +6,7 @@ import Description from './Description';
 import BuyButton from './BuyButton';
 
 const ProductContainer = styled.div`
-  padding: 26px 37px 134px 31px;
+  padding: 25px 30px 134px 30px;
   position: relative;
   @media screen and (max-width: 414px) {
     padding: 35px 15px 57px 15px;

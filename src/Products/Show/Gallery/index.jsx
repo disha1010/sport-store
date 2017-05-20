@@ -4,12 +4,8 @@ import {
   ImageWrapper,
   Image,
   Slide,
-  MoreImages,
+  Thumbnails,
   ButtonImage,
-  Hamburger,
-  HorizontalLine,
-  ButtonSeeMore,
-  SeeMore,
 } from './styled';
 
 import itemPic1 from './item-pic-1.png';
@@ -23,7 +19,7 @@ export default () => (
     <ImageWrapper>
       <Image src={itemPicFull} alt="shoes big" />
     </ImageWrapper>
-    <MoreImages>
+    <Thumbnails>
       <div className="item-img-container">
         <ButtonImage>
           <Slide src={itemPic1} alt="shoes slide" />
@@ -38,14 +34,6 @@ export default () => (
           <Slide src={itemPic4} alt="shoes slide" />
         </ButtonImage>
       </div>
-      <Hamburger>
-        <HorizontalLine />
-        <HorizontalLine />
-        <HorizontalLine />
-      </Hamburger>
-      <SeeMore>
-        <ButtonSeeMore>see more photos</ButtonSeeMore>
-      </SeeMore>
-    </MoreImages>
+    </Thumbnails>
   </Wrapper>
 );
