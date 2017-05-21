@@ -40,7 +40,6 @@ export const Image = styled.img`
   width: 100%;
 `;
 export const Cost = styled.div`
-  height: 120.5px;
   border-top: 8px solid #f4f4f4;
   display: flex;
   justify-content: center;
@@ -51,7 +50,8 @@ export const Cost = styled.div`
   background-image: ${props => (props.isPurpleBackground ? 'linear-gradient(107deg, #0c09bf, #966dd8)' : '#fff')};
   @media screen and (max-width: 2114px) {
     width: 100%;
-    height: 91px;
+    padding-top: 28px;
+    padding-bottom: 28px;
     border-top: 6px solid #f4f4f4;
   }
 `;

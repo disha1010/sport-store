@@ -6,10 +6,10 @@ import Search from './Search';
 import Logo from './Logo';
 import Aside from './styled';
 
-export const SideBar = props => (
+const SideBar = () => (
   <Aside>
     <Logo />
-    <Search value={props.location.pathname === '/shoe' ? 'ultra boost' : ''} />
+    <Search />
     <Menu />
   </Aside>
 );

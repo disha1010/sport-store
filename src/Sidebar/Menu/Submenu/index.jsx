@@ -17,25 +17,23 @@ class SubMenu extends Component {
   }
 
   render() {
-    let submenuNav;
-    if (this.state.isOpened) {
-      submenuNav = (
-        <Nav>
-          <SubmenuLink>shoes</SubmenuLink>
-          <SubmenuLink>clothing</SubmenuLink>
-          <SubmenuLink>accesories</SubmenuLink>
-        </Nav>
-      );
-    }
+    const submenuTitle = (
+      <SubmenuTitle isActive={this.state.isOpened} onClick={this.toggleState}>
+        {this.props.menuTitle}
+        <ArrowIcon />
+      </SubmenuTitle>
+    );
     return (
       <div className="submenu">
         <div>
-          <SubmenuTitle onClick={this.toggleState}>
-            {this.props.menuTitle}
-            <ArrowIcon />
-          </SubmenuTitle>
+          {submenuTitle}
         </div>
-        {submenuNav}
+        {this.state.isOpened &&
+          <Nav>
+            <SubmenuLink>shoes</SubmenuLink>
+            <SubmenuLink>clothing</SubmenuLink>
+            <SubmenuLink>accesories</SubmenuLink>
+          </Nav>}
       </div>
     );
   }

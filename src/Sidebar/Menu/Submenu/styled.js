@@ -4,6 +4,7 @@ export const Nav = styled.div`
   padding-top: 15px;
   padding-bottom: 20px;
   display: block;
+  cursor: pointer;
 `;
 
 export const SubmenuLink = styled.a`
@@ -23,7 +24,8 @@ export const SubmenuTitle = styled.div`
   display: inline-block;
   vertical-align: middle;
   text-decoration: none;
-  color: #3c3c3c;
+  cursor: pointer;
+  color: ${props => (props.isActive ? '#fff' : '#3c3c3c')};
   padding-top: 30px;
   &:hover {
     color: #fff;
