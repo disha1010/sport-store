@@ -14,7 +14,4 @@ export default styled.span`
   position: absolute;
   top: 8px;
   right: 8px;
-  @media screen and (max-width: 414px) {
-    position: absolute;
-  }
 `;

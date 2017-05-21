@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {
   Wrapper,
   ImageWrapper,
-  Image,
+  BigImage,
   Slide,
   Thumbnails,
   ButtonImage,
@@ -33,7 +33,7 @@ class Gallery extends Component {
     return (
       <Wrapper>
         <ImageWrapper>
-          <Image alt="shoes big" src={this.state.selectedImg} />
+          <BigImage alt="shoes big" src={this.state.selectedImg} />
         </ImageWrapper>
         <Thumbnails>
           <div className="item-img-container">

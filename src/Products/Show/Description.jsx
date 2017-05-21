@@ -3,14 +3,14 @@ import styled from 'styled-components';
 
 export const Text = styled.div`
   color: #d8d8d8;
-  font-size: 33px;
   font-family: 'Avenir next medium';
   margin-top: 29px;
   margin-bottom: 0px;
-  line-height: 1.52;
-  @media screen and (max-width: 414px) {
-    font-size: 20px;
-    line-height: 1.4;
+  font-size: 20px;
+  line-height: 1.4;
+  @media screen and (min-width: 768px) {
+    font-size: 33px;
+    line-height: 1.52;
   }
 `;
 

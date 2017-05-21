@@ -8,24 +8,23 @@ export const GridWrapper = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  width: calc(100% - 414px);
   position: relative;
-  left: 414px;
-  @media screen and (max-width: 1024px) {
+  left: 0px;
+  @media screen and (min-width: 768px) {
     width: calc(100% - 327px);
     left: 327px;
   }
-  @media screen and (max-width: 414px) {
-    width: 414px;
+  @media screen and (min-width: 1200px) {
+    width: calc(100% - 414px);
     position: relative;
-    left: 0px;
+    left: 414px;
   }
 `;
 export const CardWrapper = styled.div`
-  border: 12px solid #f4f4f4;
+  border: 9px solid #f4f4f4;
   margin-bottom: 17px;
-  @media screen and (max-width: 2114px) {
-    border: 9px solid #f4f4f4;
+  @media screen and (min-width: 1200px) {
+    border: 12px solid #f4f4f4;
   }
 `;
 export const StyledLink = styled(Link)`
@@ -33,25 +32,20 @@ export const StyledLink = styled(Link)`
 `;
 export const ImageWrapper = styled.div`
   position: relative;
-  @media screen and (max-width: 2114px) {
-  }
 `;
 export const Image = styled.img`
   width: 100%;
 `;
 export const Cost = styled.div`
-  border-top: 8px solid #f4f4f4;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Avenir next';
   font-size: 30px;
+  width: 100%;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  border-top: 8px solid #f4f4f4;
   color: ${props => (props.isPurpleBackground ? '#fff' : '#0d0d0d')};
   background-image: ${props => (props.isPurpleBackground ? 'linear-gradient(107deg, #0c09bf, #966dd8)' : '#fff')};
-  @media screen and (max-width: 2114px) {
-    width: 100%;
-    padding-top: 28px;
-    padding-bottom: 28px;
-    border-top: 6px solid #f4f4f4;
-  }
 `;

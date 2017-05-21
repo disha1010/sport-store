@@ -8,18 +8,15 @@ export const ImageWrapper = styled.div`
   z-index: -10;
   padding-top: 4px;
 `;
-export const Image = styled.img`
-  width: auto;
-  @media screen and (max-width: 414px) {
-    width: 100%;
+export const BigImage = styled.img`
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: auto;
   }
+    
 `;
 export const Slide = styled.img`
-  width: auto;
-  @media screen and (max-width: 414px) {
-    width: auto;
-    height: 50px;
-  }
+  width: 100%;
 `;
 export const Thumbnails = styled.div`
   display: flex;

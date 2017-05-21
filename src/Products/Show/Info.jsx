@@ -17,12 +17,12 @@ const darkGray = '#4a4a4a';
 const lightGray = '#c5c5c5';
 
 const ProductInfoLabel = styled(ProductLabel)`
-  position: absolute;
-  top: 25px;
-  right: 30px;
-  @media screen and (max-width: 414px) {
-    position: static;
-    margin-top: 10px;
+  position: static;
+  margin-top: 10px;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 25px;
+    right: 30px;
   }
 `;
 class Info extends Component {
