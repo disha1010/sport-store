@@ -25,10 +25,14 @@ export const Thumbnails = styled.div`
   display: flex;
   align-items: center;
 `;
-export const ButtonImage = styled.image`
+export const ButtonImage = styled.button`
   cursor: pointer;  
   border: none;
   padding: 0px;
   background: none;
+  margin-right: 10px;
+  &:focus {
+    border: 5px solid #e0e0e0;
+    outline: none;
+  }
 `;
-

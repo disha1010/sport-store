@@ -13,8 +13,7 @@ export default styled.aside`
     width: 327px;
   }
   @media screen and (max-width: 414px) {
-    width: 414px;
-    height: 64px;
+    width: 100%;
     top: 0;
     position: relative;
     padding: 0px;

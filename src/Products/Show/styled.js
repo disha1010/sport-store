@@ -27,7 +27,7 @@ export const Price = styled.h2`
   text-transform: uppercase;
   font-size: 80px;
   font-family: 'Avenir next';
-  color: #e2e2e2;
+  color: ${props => props.color};
   position: absolute;
   top: 77px;
   right: 31px;
@@ -78,7 +78,7 @@ export const ButtonSave = styled.button`
   width: 75px;
   height: 75px;
   border-radius: 50%;
-  background-color: #e3e3e3;
+  background-color: ${props => props.color};
   color: #fff;
   font-size: 18px;
   font-family: 'Avenir next';

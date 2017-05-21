@@ -23,6 +23,7 @@ class SubMenu extends Component {
         <ArrowIcon />
       </SubmenuTitle>
     );
+
     return (
       <div className="submenu">
         <div>

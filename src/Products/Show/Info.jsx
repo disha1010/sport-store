@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import ProductLabel from '../../ProductLabel';
 import {
@@ -25,19 +25,37 @@ const ProductInfoLabel = styled(ProductLabel)`
     margin-top: 10px;
   }
 `;
-export default () => (
-  <InfoWrapper>
-    <Name>ultra boost</Name>
-    <Price>190$</Price>
-    <Colors>
-      <ButtonColor color={gray} />
-      <ButtonColor color={blue} />
-      <ButtonColor color={darkGray} />
-      <ButtonColor color={lightGray} />
-    </Colors>
-    <ProductInfoLabel>sale</ProductInfoLabel>
-    <Save>
-      <ButtonSave>save</ButtonSave>
-    </Save>
-  </InfoWrapper>
-);
+class Info extends Component {
+  constructor(props) {
+    super(props);
+    this.selectColor = this.selectColor.bind(this);
+    this.state = {
+      selectedColor: gray,
+    };
+  }
+
+  selectColor(color) {
+    this.setState({ selectedColor: color });
+  }
+
+  render() {
+    return (
+      <InfoWrapper>
+        <Name>ultra boost</Name>
+        <Price color={this.state.selectedColor}>190$</Price>
+        <Colors>
+          <ButtonColor color={gray} onClick={() => this.selectColor(gray)} />
+          <ButtonColor color={blue} onClick={() => this.selectColor(blue)} />
+          <ButtonColor color={darkGray} onClick={() => this.selectColor(darkGray)} />
+          <ButtonColor color={lightGray} onClick={() => this.selectColor(lightGray)} />
+        </Colors>
+        <ProductInfoLabel>sale</ProductInfoLabel>
+        <Save>
+          <ButtonSave color={this.state.selectedColor}>save</ButtonSave>
+        </Save>
+      </InfoWrapper>
+    );
+  }
+}
+
+export default Info;
