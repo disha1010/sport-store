@@ -21,6 +21,7 @@ export const Button = styled.button`
   text-transform: uppercase;
   font-size: 24px;
   font-family: 'Avenir next';
+  padding-right: 5px;
   color:  ${props => (props.isActive ? '#4d42f8' : '#d6d6d6')};
   &:focus{
     border: none;

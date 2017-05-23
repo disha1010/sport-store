@@ -13,7 +13,7 @@ export default () => (
     <Filter />
     <GridWrapper>
       <Row>
-        <Col xs={12} sm={6} md={4}>
+        <Col sm={6} md={4}>
           <Card
             imageUrl={shoes}
             imageAlt={'shoes.png'}
@@ -22,7 +22,7 @@ export default () => (
             to={'/shoe'}
           />
         </Col>
-        <Col xs={12} sm={6} md={4}>
+        <Col sm={6} md={4}>
           <Card
             imageUrl={shoes2}
             imageAlt={'shoes2.png'}
@@ -31,7 +31,7 @@ export default () => (
             to={'/shoe'}
           />
         </Col>
-        <Col xs={12} sm={6} md={4}>
+        <Col sm={6} md={4}>
           <Card
             imageUrl={shoes3}
             imageAlt={'shoes3.png'}
@@ -40,7 +40,7 @@ export default () => (
             to={'/shoe'}
           />
         </Col>
-        <Col xs={12} sm={6} md={4}>
+        <Col sm={6} md={4}>
           <Card
             imageUrl={shoes2}
             imageAlt={'shoes2.png'}
@@ -49,7 +49,7 @@ export default () => (
             to={'/shoe'}
           />
         </Col>
-        <Col xs={12} sm={6} md={4}>
+        <Col sm={6} md={4}>
           <Card
             imageUrl={shoes3}
             imageAlt={'shoes3.png'}
@@ -58,7 +58,7 @@ export default () => (
             to={'/shoe'}
           />
         </Col>
-        <Col xs={12} sm={6} md={4}>
+        <Col sm={6} md={4}>
           <Card
             imageUrl={shoes}
             imageAlt={'shoes.png'}

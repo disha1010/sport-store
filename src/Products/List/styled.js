@@ -12,12 +12,11 @@ export const Wrapper = styled.div`
   left: 0px;
   @media screen and (min-width: 768px) {
     width: calc(100% - 327px);
-    left: 327px;
+    margin-left: 327px;
   }
   @media screen and (min-width: 1200px) {
     width: calc(100% - 414px);
-    position: relative;
-    left: 414px;
+    margin-left: 414px;
   }
 `;
 export const CardWrapper = styled.div`

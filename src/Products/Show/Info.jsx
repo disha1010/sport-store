@@ -16,6 +16,8 @@ const blue = '#4d87ca';
 const darkGray = '#4a4a4a';
 const lightGray = '#c5c5c5';
 
+const colors = [gray, blue, darkGray, lightGray];
+
 const ProductInfoLabel = styled(ProductLabel)`
   position: static;
   margin-top: 10px;
@@ -39,15 +41,19 @@ class Info extends Component {
   }
 
   render() {
+    const infoColor = colors.map(colorType => (
+      <ButtonColor
+        color={colorType}
+        onClick={() => this.selectColor(colorType)}
+      />
+    ));
+
     return (
       <InfoWrapper>
         <Name>ultra boost</Name>
         <Price color={this.state.selectedColor}>190$</Price>
         <Colors>
-          <ButtonColor color={gray} onClick={() => this.selectColor(gray)} />
-          <ButtonColor color={blue} onClick={() => this.selectColor(blue)} />
-          <ButtonColor color={darkGray} onClick={() => this.selectColor(darkGray)} />
-          <ButtonColor color={lightGray} onClick={() => this.selectColor(lightGray)} />
+          {infoColor}
         </Colors>
         <ProductInfoLabel>sale</ProductInfoLabel>
         <Save>

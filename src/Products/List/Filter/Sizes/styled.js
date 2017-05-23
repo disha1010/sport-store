@@ -19,7 +19,4 @@ export const Title = styled.span`
 `;
 
 export const SizeValues = styled.div`
-  width: 254px;
-  display: flex;
-  justify-content: space-between;
 `;

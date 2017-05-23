@@ -1,5 +1,4 @@
 import React from 'react';
-import { withRouter } from 'react-router';
 import PropTypes from 'prop-types';
 import Menu from './Menu';
 import Search from './Search';
@@ -20,4 +19,4 @@ SideBar.propTypes = {
   }).isRequired,
 };
 
-export default withRouter(SideBar);
+export default SideBar;

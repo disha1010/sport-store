@@ -1,14 +1,14 @@
 import React from 'react';
 import Submenu from './Submenu';
 
-import Nav from './styled';
+import { NavWrapper } from './styled';
 
-const Menu = () => (
-  <Nav>
-    <Submenu menuTitle="sports" />
-    <Submenu menuTitle="brands" />
-    <Submenu menuTitle="micoach" />
-  </Nav>
+export default () => (
+  <NavWrapper>
+    <Submenu title="football" />
+    <Submenu title="running" />
+    <Submenu title="basketball" />
+  </NavWrapper>
 );
 
-export default Menu;
+// export default Navigation;
