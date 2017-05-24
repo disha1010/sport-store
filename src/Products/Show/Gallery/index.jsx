@@ -17,17 +17,20 @@ import itemPicFull2 from './item-pic-full-2.jpg';
 import itemPicFull3 from './item-pic-full-3.jpg';
 import itemPicFull4 from './item-pic-full-4.png';
 
+const images = [itemPicFull1, itemPicFull2, itemPicFull3, itemPicFull4];
+// const slides = [itemPic1, itemPic2, itemPic3, itemPic4];
+
 class Gallery extends Component {
   constructor(props) {
     super(props);
     this.selectImg = this.selectImg.bind(this);
     this.state = {
-      selectedImg: itemPicFull1,
+      selectedImg: images[0],
     };
   }
 
-  selectImg(img) {
-    this.setState({ selectedImg: img });
+  selectImg(image) {
+    this.setState({ selectedImg: image });
   }
   render() {
     return (
@@ -36,20 +39,18 @@ class Gallery extends Component {
           <BigImage alt="shoes big" src={this.state.selectedImg} />
         </ImageWrapper>
         <Thumbnails>
-          <div className="item-img-container">
-            <ButtonImage onClick={() => this.selectImg(itemPicFull1)}>
-              <Slide src={itemPic1} alt="shoes slide" />
-            </ButtonImage>
-            <ButtonImage onClick={() => this.selectImg(itemPicFull2)}>
-              <Slide src={itemPic2} alt="shoes slide" />
-            </ButtonImage>
-            <ButtonImage onClick={() => this.selectImg(itemPicFull3)}>
-              <Slide src={itemPic3} alt="shoes slide" />
-            </ButtonImage>
-            <ButtonImage onClick={() => this.selectImg(itemPicFull4)}>
-              <Slide src={itemPic4} alt="shoes slide" />
-            </ButtonImage>
-          </div>
+          <ButtonImage onClick={() => this.selectImg(itemPicFull1)}>
+            <Slide src={itemPic1} alt="shoes slide" />
+          </ButtonImage>
+          <ButtonImage onClick={() => this.selectImg(itemPicFull2)}>
+            <Slide src={itemPic2} alt="shoes slide" />
+          </ButtonImage>
+          <ButtonImage onClick={() => this.selectImg(itemPicFull3)}>
+            <Slide src={itemPic3} alt="shoes slide" />
+          </ButtonImage>
+          <ButtonImage onClick={() => this.selectImg(itemPicFull4)}>
+            <Slide src={itemPic4} alt="shoes slide" />
+          </ButtonImage>
         </Thumbnails>
       </Wrapper>
     );

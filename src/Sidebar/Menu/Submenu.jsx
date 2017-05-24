@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import ArrowIcon from './Icon';
-import { Nav, StyledLink, Title, Menu } from './styled';
+import { Nav, StyledLink as Link, Title, Menu } from './styled';
 
 class SubMenu extends Component {
   constructor(props) {
@@ -25,9 +25,9 @@ class SubMenu extends Component {
         </Title>
         {this.state.isOpened &&
           <Nav>
-            <StyledLink to={{ pathname: `/${this.props.title}/shoes` }}>shoes</StyledLink>
-            <StyledLink to={{ pathname: `/${this.props.title}/clothing` }}>clothing</StyledLink>
-            <StyledLink to={{ pathname: `/${this.props.title}/accesories` }}>accesories</StyledLink>
+            <Link to={{ pathname: `/${this.props.title}/shoes` }}>shoes</Link>
+            <Link to={{ pathname: `/${this.props.title}/clothing` }}>clothing</Link>
+            <Link to={{ pathname: `/${this.props.title}/accesories` }}>accesories</Link>
           </Nav>}
       </Menu>
     );

@@ -27,37 +27,36 @@ const ProductInfoLabel = styled(ProductLabel)`
     right: 30px;
   }
 `;
+
 class Info extends Component {
   constructor(props) {
     super(props);
-    this.selectColor = this.selectColor.bind(this);
+    this.handleChangeColor = this.handleChangeColor.bind(this);
     this.state = {
-      selectedColor: gray,
+      color: colors[0],
     };
   }
 
-  selectColor(color) {
-    this.setState({ selectedColor: color });
+  handleChangeColor(color) {
+    this.setState({ color });
   }
 
   render() {
-    const infoColor = colors.map(colorType => (
-      <ButtonColor
-        color={colorType}
-        onClick={() => this.selectColor(colorType)}
-      />
-    ));
-
     return (
       <InfoWrapper>
         <Name>ultra boost</Name>
-        <Price color={this.state.selectedColor}>190$</Price>
+        <Price color={this.state.color}>190$</Price>
         <Colors>
-          {infoColor}
+          {colors.map(color => (
+            <ButtonColor
+              color={color}
+              onClick={() => this.handleChangeColor(color)}
+            />
+          ))}
         </Colors>
         <ProductInfoLabel>sale</ProductInfoLabel>
         <Save>
-          <ButtonSave color={this.state.selectedColor}>save</ButtonSave>
+          <ButtonSave color={this.state.color}>save</ButtonSave>
         </Save>
       </InfoWrapper>
     );
