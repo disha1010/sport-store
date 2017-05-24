@@ -6,7 +6,6 @@ import {
   Name,
   Price,
   Colors,
-  Save,
   ButtonSave,
   ButtonColor,
 } from './styled';
@@ -55,9 +54,7 @@ class Info extends Component {
           ))}
         </Colors>
         <ProductInfoLabel>sale</ProductInfoLabel>
-        <Save>
-          <ButtonSave color={this.state.color}>save</ButtonSave>
-        </Save>
+        <ButtonSave color={this.state.color}>save</ButtonSave>
       </InfoWrapper>
     );
   }

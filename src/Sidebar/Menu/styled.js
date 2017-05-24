@@ -1,19 +1,8 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-export const NavWrapper = styled.nav`
-  display:none;
-  @media screen and (min-width: 768px) {
-    display: block;
-    font-size: 24px;
-    font-family: 'Avenir next';
-    text-transform: uppercase;
-    padding-top: 120px;
-    text-align: center;
-  }
-`;
 
-export const Menu = styled.div`
+export const Wrapper = styled.div`
 `;
 
 export const Nav = styled.div`

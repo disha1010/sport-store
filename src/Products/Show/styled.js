@@ -46,14 +46,6 @@ export const Colors = styled.div`
     right: 136px;
   }
 `;
-export const Save = styled.div`
-  display: none;
-  @media screen and (min-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 168px;
-  }
-`;
 
 export const ButtonColor = styled.button`
   cursor: pointer;
@@ -71,6 +63,7 @@ export const ButtonColor = styled.button`
 `;
 
 export const ButtonSave = styled.button`
+  display: none;
   cursor: pointer;
   border: none;
   padding: 0px;
@@ -86,5 +79,10 @@ export const ButtonSave = styled.button`
   &:focus {
     border: none;
     outline: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 168px;
   }
 `;

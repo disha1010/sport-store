@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export default styled.aside`
+export const Aside = styled.aside`
   width: 100%;
   top: 0;
   position: relative;
@@ -17,5 +17,17 @@ export default styled.aside`
   }
   @media screen and (min-width: 1200px) {
     width: 414px;
+  }
+`;
+
+export const MenuWrapper = styled.nav`
+  display:none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    font-size: 24px;
+    font-family: 'Avenir next';
+    text-transform: uppercase;
+    padding-top: 120px;
+    text-align: center;
   }
 `;

@@ -17,40 +17,41 @@ import itemPicFull2 from './item-pic-full-2.jpg';
 import itemPicFull3 from './item-pic-full-3.jpg';
 import itemPicFull4 from './item-pic-full-4.png';
 
-const images = [itemPicFull1, itemPicFull2, itemPicFull3, itemPicFull4];
-// const slides = [itemPic1, itemPic2, itemPic3, itemPic4];
+const images = [
+  { preview: itemPic1, full: itemPicFull1 },
+  { preview: itemPic2, full: itemPicFull2 },
+  { preview: itemPic3, full: itemPicFull3 },
+  { preview: itemPic4, full: itemPicFull4 },
+];
 
 class Gallery extends Component {
   constructor(props) {
     super(props);
     this.selectImg = this.selectImg.bind(this);
     this.state = {
-      selectedImg: images[0],
+      selectedImgId: 0,
     };
   }
 
-  selectImg(image) {
-    this.setState({ selectedImg: image });
+  selectImg(imageId) {
+    this.setState({ selectedImgId: imageId });
   }
+
   render() {
     return (
       <Wrapper>
         <ImageWrapper>
-          <BigImage alt="shoes big" src={this.state.selectedImg} />
+          <BigImage
+            alt="shoes big"
+            src={images[this.state.selectedImgId].full}
+          />
         </ImageWrapper>
         <Thumbnails>
-          <ButtonImage onClick={() => this.selectImg(itemPicFull1)}>
-            <Slide src={itemPic1} alt="shoes slide" />
-          </ButtonImage>
-          <ButtonImage onClick={() => this.selectImg(itemPicFull2)}>
-            <Slide src={itemPic2} alt="shoes slide" />
-          </ButtonImage>
-          <ButtonImage onClick={() => this.selectImg(itemPicFull3)}>
-            <Slide src={itemPic3} alt="shoes slide" />
-          </ButtonImage>
-          <ButtonImage onClick={() => this.selectImg(itemPicFull4)}>
-            <Slide src={itemPic4} alt="shoes slide" />
-          </ButtonImage>
+          {images.map((image, id) => (
+            <ButtonImage onClick={() => this.selectImg(id)}>
+              <Slide src={image.preview} alt="shoes slide" />
+            </ButtonImage>
+          ))}
         </Thumbnails>
       </Wrapper>
     );
