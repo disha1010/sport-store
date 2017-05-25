@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Search from './Search';
 import Logo from './Logo';
 import Menu from './Menu';
@@ -29,11 +28,5 @@ const SideBar = () => (
     </MenuWrapper>
   </Aside>
 );
-
-SideBar.propTypes = {
-  location: PropTypes.shape({
-    pathname: PropTypes.string.isRequired,
-  }).isRequired,
-};
 
 export default SideBar;

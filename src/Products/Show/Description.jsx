@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export const Text = styled.div`
+const Text = styled.div`
   color: #d8d8d8;
   font-family: 'Avenir next medium';
   margin-top: 29px;
@@ -14,7 +14,7 @@ export const Text = styled.div`
   }
 `;
 
-export const Accent = styled.span`
+const Accent = styled.span`
   color: #6e6e6e
 `;
 

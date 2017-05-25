@@ -29,12 +29,12 @@ class Gallery extends Component {
     super(props);
     this.selectImg = this.selectImg.bind(this);
     this.state = {
-      selectedImgId: 0,
+      selectedImgIndex: 0,
     };
   }
 
-  selectImg(imageId) {
-    this.setState({ selectedImgId: imageId });
+  selectImg(imageIndex) {
+    this.setState({ selectedImgIndex: imageIndex });
   }
 
   render() {
@@ -43,12 +43,12 @@ class Gallery extends Component {
         <ImageWrapper>
           <BigImage
             alt="shoes big"
-            src={images[this.state.selectedImgId].full}
+            src={images[this.state.selectedImgIndex].full}
           />
         </ImageWrapper>
         <Thumbnails>
-          {images.map((image, id) => (
-            <ButtonImage onClick={() => this.selectImg(id)}>
+          {images.map((image, index) => (
+            <ButtonImage onClick={() => this.selectImg(index)}>
               <Slide src={image.preview} alt="shoes slide" />
             </ButtonImage>
           ))}

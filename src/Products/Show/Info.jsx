@@ -32,29 +32,29 @@ class Info extends Component {
     super(props);
     this.handleChangeColor = this.handleChangeColor.bind(this);
     this.state = {
-      color: colors[0],
+      colorIndex: 0,
     };
   }
 
-  handleChangeColor(color) {
-    this.setState({ color });
+  handleChangeColor(colorIndex) {
+    this.setState({ colorIndex });
   }
 
   render() {
     return (
       <InfoWrapper>
         <Name>ultra boost</Name>
-        <Price color={this.state.color}>190$</Price>
+        <Price color={colors[this.state.colorIndex]}>190$</Price>
         <Colors>
-          {colors.map(color => (
+          {colors.map((color, index) => (
             <ButtonColor
               color={color}
-              onClick={() => this.handleChangeColor(color)}
+              onClick={() => this.handleChangeColor(index)}
             />
           ))}
         </Colors>
         <ProductInfoLabel>sale</ProductInfoLabel>
-        <ButtonSave color={this.state.color}>save</ButtonSave>
+        <ButtonSave color={colors[this.state.colorIndex]}>save</ButtonSave>
       </InfoWrapper>
     );
   }
