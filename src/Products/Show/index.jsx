@@ -35,4 +35,4 @@ export default () => (
     </ProductContainer>
     <BuyButton />
   </Wrapper>
-);
+  );

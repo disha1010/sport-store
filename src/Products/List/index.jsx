@@ -19,7 +19,7 @@ export default () => (
             imageAlt={'shoes.png'}
             isOnSale
             cost={170}
-            to={'/shoe'}
+            to={'/running/shoes/1'}
           />
         </Col>
         <Col sm={6} md={4}>
@@ -28,7 +28,7 @@ export default () => (
             imageAlt={'shoes2.png'}
             isOnSale
             cost={230}
-            to={'/shoe'}
+            to={'/running/shoes/2'}
           />
         </Col>
         <Col sm={6} md={4}>
@@ -37,7 +37,7 @@ export default () => (
             imageAlt={'shoes3.png'}
             isOnSale
             cost={190}
-            to={'/shoe'}
+            to={'/running/shoes/3'}
           />
         </Col>
         <Col sm={6} md={4}>
@@ -46,7 +46,7 @@ export default () => (
             imageAlt={'shoes2.png'}
             isOnSale={false}
             cost={170}
-            to={'/shoe'}
+            to={'/running/shoes/4'}
           />
         </Col>
         <Col sm={6} md={4}>
@@ -55,7 +55,7 @@ export default () => (
             imageAlt={'shoes3.png'}
             isOnSale={false}
             cost={230}
-            to={'/shoe'}
+            to={'/running/shoes/5'}
           />
         </Col>
         <Col sm={6} md={4}>
@@ -64,10 +64,10 @@ export default () => (
             imageAlt={'shoes.png'}
             isOnSale={false}
             cost={190}
-            to={'/shoe'}
+            to={'/running/shoes/6'}
           />
         </Col>
       </Row>
     </GridWrapper>
   </Wrapper>
-);
+  );

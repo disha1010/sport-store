@@ -14,7 +14,14 @@ export const Nav = styled.div`
   display: block;
   cursor: pointer;
 `;
-
+export const MenuIcon = styled.img`
+  padding-right: 14px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  @media screen and (min-width: 768px) {  
+  display:none;
+  }
+`;
 export const StyledLink = styled(Link)`
   font-family: 'AndaleMono';
   padding-top: 26px;
@@ -49,7 +56,6 @@ export const Title = styled.button`
   &:hover [fill] {
     fill: #fff;
   }
-  
   &:focus{
     border: none;
     outline: none;

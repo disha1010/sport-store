@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
     width: 290px;
     border-bottom: 4px solid rgba(55,55,55,0.56);
     margin: 0 auto;
-    padding-top: 21px;
+    padding-top: 20px;
   }
   @media screen and (min-width: 1200px) {
     width: 370px;

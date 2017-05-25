@@ -48,6 +48,7 @@ class Info extends Component {
         <Colors>
           {colors.map((color, index) => (
             <ButtonColor
+              key={color}
               color={color}
               onClick={() => this.handleChangeColor(index)}
             />

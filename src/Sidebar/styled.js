@@ -6,8 +6,11 @@ export const Aside = styled.aside`
   position: relative;
   padding: 0px;
   background-color: #000;
-  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
   @media screen and (min-width: 768px) {
+    display: block;
+    padding-top: 30px;
     width: 327px;
     height: 100%;
     left: 0;

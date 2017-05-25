@@ -3,11 +3,14 @@ import Search from './Search';
 import Logo from './Logo';
 import Menu from './Menu';
 import { MenuWrapper, Aside } from './styled';
-import { StyledLink as Link } from './Menu/styled';
+import { StyledLink as Link, MenuIcon } from './Menu/styled';
+
+import hamburger from './Menu/menu-icon.png';
 
 const SideBar = () => (
   <Aside>
     <Logo />
+    <MenuIcon src={hamburger} alt="menu-icon" />
     <Search />
     <MenuWrapper>
       <Menu title="football">
@@ -27,6 +30,6 @@ const SideBar = () => (
       </Menu>
     </MenuWrapper>
   </Aside>
-);
+  );
 
 export default SideBar;
