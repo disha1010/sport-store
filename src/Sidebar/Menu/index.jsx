@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import ArrowIcon from './Icon';
-import { Nav, Title, Wrapper } from './styled';
+import { Nav, ButtonTitle, Wrapper } from './styled';
 
 class Menu extends Component {
   constructor(props) {
@@ -19,10 +19,10 @@ class Menu extends Component {
   render() {
     return (
       <Wrapper>
-        <Title onClick={this.toggle}>
+        <ButtonTitle onClick={this.toggle}>
           {this.props.title}
           <ArrowIcon />
-        </Title>
+        </ButtonTitle>
         {this.state.isOpened && <Nav>{this.props.children}</Nav>}
       </Wrapper>
     );

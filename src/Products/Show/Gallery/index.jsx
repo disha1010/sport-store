@@ -33,8 +33,8 @@ class Gallery extends Component {
     };
   }
 
-  selectImg(imageIndex) {
-    this.setState({ selectedImgIndex: imageIndex });
+  selectImg(selectedImgIndex) {
+    this.setState({ selectedImgIndex });
   }
 
   render() {

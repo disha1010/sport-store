@@ -14,19 +14,19 @@ const SideBar = () => (
     <Search />
     <MenuWrapper>
       <Menu title="football">
-        <Link to="/football/shoes">shoes</Link>
-        <Link to="/football/clothing">clothing</Link>
-        <Link to="/football/accesories"> accesories </Link>
+        <Link to="/products/football/shoes">shoes</Link>
+        <Link to="/products/football/clothing">clothing</Link>
+        <Link to="/products/football/accesories"> accesories </Link>
       </Menu>
       <Menu title="running">
-        <Link to="/running/shoes"> shoes </Link>
-        <Link to="/running/clothing"> clothing </Link>
-        <Link to="/running/accesories"> accesories </Link>
+        <Link to="/products/running/shoes"> shoes </Link>
+        <Link to="/products/running/clothing"> clothing </Link>
+        <Link to="/products/running/accesories"> accesories </Link>
       </Menu>
       <Menu title="basketball">
-        <Link to="/basketball/shoes"> shoes </Link>
-        <Link to="/basketball/clothing"> clothing </Link>
-        <Link to="/basketball/accesories"> accesories </Link>
+        <Link to="/products/basketball/shoes"> shoes </Link>
+        <Link to="/products/basketball/clothing"> clothing </Link>
+        <Link to="/products/basketball/accesories"> accesories </Link>
       </Menu>
     </MenuWrapper>
   </Aside>

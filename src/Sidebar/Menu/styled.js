@@ -36,7 +36,7 @@ export const StyledLink = styled(Link)`
   } 
 `;
 
-export const Title = styled.button`
+export const ButtonTitle = styled.button`
   font-size: 24px;
   font-family: 'Avenir next';
   text-transform: uppercase;
