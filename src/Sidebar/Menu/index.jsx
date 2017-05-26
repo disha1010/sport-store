@@ -18,8 +18,6 @@ class Menu extends Component {
   }
 
   render() {
-    const { location } = this.props;
-    console.debug('location', location);
     return (
       <Wrapper>
         <ButtonTitle onClick={this.toggle}>
