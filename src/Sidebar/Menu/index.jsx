@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router';
 import PropTypes from 'prop-types';
 import ArrowIcon from './Icon';
 import { Nav, ButtonTitle, Wrapper } from './styled';
@@ -17,6 +18,8 @@ class Menu extends Component {
   }
 
   render() {
+    const { location } = this.props;
+    console.debug('location', location);
     return (
       <Wrapper>
         <ButtonTitle onClick={this.toggle}>
@@ -37,4 +40,4 @@ Menu.defaultProps = {
   title: '',
 };
 
-export default Menu;
+export default withRouter(Menu);
