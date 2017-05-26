@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
+import logo from './logo.png';
+import mobileLogo from './mobile-logo.png';
+
 export const StyledLink = styled(Link)`
   display: block;
   padding-top: 17px;
@@ -8,14 +11,20 @@ export const StyledLink = styled(Link)`
   padding-left: 15px;
   margin: 0;
   @media screen and (min-width: 768px) {
-    text-align: center;
     padding-top: 21px;
     padding-bottom: 21px;
     padding-left: 0px;
-    margin: 0 auto;
   }
 `;
-export const Image = styled.img`
+export const Image = styled.div`
+  background: url("${mobileLogo}") no-repeat;
+  width: 44px;
+  height: 30px;
+  border: none;
   @media screen and (min-width: 768px) {
+    background: url("${logo}") no-repeat;
+    width: 80px;
+    height: 54px;
+    margin: 0 auto;
   }
 `;
