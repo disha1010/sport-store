@@ -24,10 +24,19 @@ export const Aside = styled.aside`
 `;
 
 export const MenuWrapper = styled.nav`
-  display:none;
+  display: ${props => (props.isMobileOpened ? 'block' : 'none')};
+  position: absolute;
+  top: 64px;
+  background-color: #000;
+  width: 100%;
+  z-index: 2;
+  padding-bottom: 15px;
   @media screen and (min-width: 768px) {
+    position: relative;
+    top: 0px;
     display: block;
     padding-top: 120px;
+    padding-bottom: 0px;
     text-align: center;
   }
 `;
