@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  padding-left: 50px;
+  padding-left: 0px;
   display: flex;
   align-items: center;
-  @media screen and (max-width: 414px) {
-    padding-left: 0px;
+  @media screen and (min-width: 768px) {
+    padding-left: 50px;
   }
 `;
 
@@ -16,4 +16,7 @@ export const Title = styled.span`
   font-family: 'Avenir next';
   color: #4d42f8;
   background-color: #fff;
+`;
+
+export const SizeValues = styled.div`
 `;

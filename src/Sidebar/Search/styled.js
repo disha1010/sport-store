@@ -1,17 +1,18 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  display: flex;
-  border-bottom: 4px solid rgba(55,55,55,0.56);
-  width: 370px;
-  margin: 0 auto;
-  padding-top: 21px;
-  @media screen and (max-width: 1024px) {
+  display:none;
+  @media screen and (min-width: 768px) {  
+    display: flex;
     width: 290px;
+    border-bottom: 4px solid rgba(55,55,55,0.56);
+    margin: 0 auto;
+    padding-top: 20px;
   }
-  @media screen and (max-width: 414px) {
-    display:none;
+  @media screen and (min-width: 1200px) {
+    width: 370px;
   }
+  
 `;
 export const Icon = styled.img`
   width: 28px;
@@ -25,8 +26,16 @@ export const Input = styled.input`
   width: 300px;
   padding-right: 14px;
   padding-left: 14px;
+  text-transform: uppercase;
+  font-family: 'Avenir next';
+  font-size: 24px;
+  color: #3a3a3a;
+  padding-bottom: 5px;
   &:focus {
     border: none;
     outline: none;
+  }
+  @media screen and (min-width: 768px) {
+    width: 200px;
   }
 `;

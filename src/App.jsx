@@ -9,7 +9,8 @@ export default () => (
     <div className="App">
       <Sidebar />
       <Route exact path="/" component={List} />
-      <Route path="/shoe" component={Show} />
+      <Route exact path="/products/:category/:subCategory" component={List} />
+      <Route exact path="/products/:productId" component={Show} />
     </div>
   </Router>
 );

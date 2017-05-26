@@ -12,6 +12,6 @@ export default styled.span`
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: ${props => (props.isDetails ? '35px' : '8px')};
-  right: ${props => (props.isDetails ? '37px' : '8px')};
+  top: 8px;
+  right: 8px;
 `;

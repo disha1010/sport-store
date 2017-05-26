@@ -1,35 +1,12 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Row, Col } from 'react-flexbox-grid';
 import Filter from './Filter';
-import Card from './Card';
-
-import './style.css';
+import { Card } from './Card';
+import { Wrapper, GridWrapper } from './styled';
 
 import shoes from './shoes.png';
 import shoes2 from './shoes2.png';
 import shoes3 from './shoes3.png';
-
-const GridWrapper = styled.div`
-  padding-top: 22px;
-  padding-left: 24px;
-  padding-right: 24px;
-`;
-
-const Wrapper = styled.div`
-  width: calc(100% - 414px);
-  position: relative;
-  left: 414px;
-  @media screen and (max-width: 1024px) {
-    width: calc(100% - 327px);
-    left: 327px;
-  }
-  @media screen and (max-width: 414px) {
-    width: 414px;
-    position: relative;
-    left: 0px;
-  }
-`;
 
 export default () => (
   <Wrapper>
@@ -42,7 +19,7 @@ export default () => (
             imageAlt={'shoes.png'}
             isOnSale
             cost={170}
-            to={'/shoe'}
+            to="/products/1"
           />
         </Col>
         <Col sm={6} md={4}>
@@ -51,7 +28,7 @@ export default () => (
             imageAlt={'shoes2.png'}
             isOnSale
             cost={230}
-            to={'/shoe'}
+            to="/products/2"
           />
         </Col>
         <Col sm={6} md={4}>
@@ -60,7 +37,7 @@ export default () => (
             imageAlt={'shoes3.png'}
             isOnSale
             cost={190}
-            to={'/shoe'}
+            to="/products/3"
           />
         </Col>
         <Col sm={6} md={4}>
@@ -69,7 +46,7 @@ export default () => (
             imageAlt={'shoes2.png'}
             isOnSale={false}
             cost={170}
-            to={'/shoe'}
+            to="/products/4"
           />
         </Col>
         <Col sm={6} md={4}>
@@ -78,7 +55,7 @@ export default () => (
             imageAlt={'shoes3.png'}
             isOnSale={false}
             cost={230}
-            to={'/shoe'}
+            to="/products/5"
           />
         </Col>
         <Col sm={6} md={4}>
@@ -87,10 +64,10 @@ export default () => (
             imageAlt={'shoes.png'}
             isOnSale={false}
             cost={190}
-            to={'/shoe'}
+            to="products/6"
           />
         </Col>
       </Row>
     </GridWrapper>
   </Wrapper>
-);
+  );

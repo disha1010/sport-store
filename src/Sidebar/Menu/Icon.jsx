@@ -7,7 +7,7 @@ export default () => (
     height="9"
     viewBox="0 0 14 9"
   >
-    <g fill="#FFF" fillRule="evenodd">
+    <g fill="#fff" fillRule="evenodd">
       <rect
         width="3"
         height="9"
@@ -24,4 +24,4 @@ export default () => (
       />
     </g>
   </svg>
-  );
+);

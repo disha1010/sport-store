@@ -9,13 +9,18 @@ const Wrapper = styled.div`
   text-align: center;
   justify-content: center;
   position: fixed;
-  left: 414px;
   bottom: 0px;
   right: 0px;
   z-index: 5;
-  @media screen and (max-width: 1024px) {
+  width: 100%;
+  left: 0px;
+  @media screen and (min-width: 768px) {
     width: calc(100% - 327px);
     left: 327px;
+  }
+  @media screen and  (min-width: 1200px) {
+    width: calc(100% - 414px);
+    left: 414px;
   }
 `;
 const Button = styled.button`
