@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router';
 import PropTypes from 'prop-types';
 import ArrowIcon from './Icon';
 import { Nav, ButtonTitle, Wrapper } from './styled';
@@ -9,15 +8,8 @@ class Menu extends Component {
     super(props);
     this.toggle = this.toggle.bind(this);
     this.state = {
-      isOpened: props.location.pathname.split('/')[2] === props.category,
+      isOpened: false,
     };
-  }
-
-  componentWillReceiveProps(nextProps) {
-    this.setState(prevState => ({
-      isOpened: prevState.isOpened ||
-        nextProps.location.pathname.split('/')[2] === nextProps.category,
-    }));
   }
 
   toggle() {
@@ -39,15 +31,10 @@ class Menu extends Component {
 
 Menu.propTypes = {
   title: PropTypes.string,
-  category: PropTypes.string,
   children: PropTypes.node.isRequired,
-  location: PropTypes.shape({
-    pathname: PropTypes.string.isRequired,
-  }).isRequired,
 };
 Menu.defaultProps = {
   title: '',
-  category: '',
 };
 
-export default withRouter(Menu);
+export default Menu;
