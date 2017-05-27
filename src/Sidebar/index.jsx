@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import Search from './Search';
 import Logo from './Logo';
 import Menu from './Menu';
-import { MenuWrapper, Aside } from './styled';
-import { StyledLink as Link, MenuIcon } from './Menu/styled';
+import { StyledLink as Link, MenuWrapper, Aside } from './styled';
+import { MenuIcon } from './Menu/styled';
 
 import hamburger from './Menu/menu-icon.png';
 
