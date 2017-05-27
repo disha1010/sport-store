@@ -8,12 +8,12 @@ class Menu extends Component {
     super(props);
     this.toggle = this.toggle.bind(this);
     this.state = {
-      isOpened: false,
+      isOpen: false,
     };
   }
 
   toggle() {
-    this.setState(prevState => ({ isOpened: !prevState.isOpened }));
+    this.setState(prevState => ({ isOpen: !prevState.isOpen }));
   }
 
   render() {
@@ -23,7 +23,7 @@ class Menu extends Component {
           {this.props.title}
           <ArrowIcon />
         </ButtonTitle>
-        {this.state.isOpened && <Nav>{this.props.children}</Nav>}
+        {this.state.isOpen && <Nav>{this.props.children}</Nav>}
       </Wrapper>
     );
   }
