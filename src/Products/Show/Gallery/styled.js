@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
 export const ImageWrapper = styled.div`
   z-index: -10;
   padding-top: 4px;
+  text-align: center;
 `;
 export const BigImage = styled.img`
   width: 100%;
@@ -19,8 +20,8 @@ export const Slide = styled.img`
   width: 100%;
 `;
 export const Thumbnails = styled.div`
-  display: flex;
-  align-items: center;
+  display: block;
+  text-align: center;
 `;
 export const ButtonImage = styled.button`
   cursor: pointer;  
@@ -28,8 +29,8 @@ export const ButtonImage = styled.button`
   padding: 0px;
   background: none;
   margin-right: 10px;
+  border: ${props => (props.isSelected ? '5px solid #e0e0e0' : 'none')};
   &:focus {
-    border: 5px solid #e0e0e0;
     outline: none;
   }
 `;

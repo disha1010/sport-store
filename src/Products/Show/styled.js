@@ -44,6 +44,7 @@ export const Colors = styled.div`
     position: absolute;
     top: 32px;
     right: 136px;
+    padding-top: 10px;
   }
 `;
 
