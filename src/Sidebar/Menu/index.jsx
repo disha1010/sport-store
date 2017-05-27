@@ -31,7 +31,7 @@ class Menu extends Component {
 
 Menu.propTypes = {
   title: PropTypes.string,
-  children: PropTypes.element.isRequired,
+  children: PropTypes.node.isRequired,
 };
 Menu.defaultProps = {
   title: '',

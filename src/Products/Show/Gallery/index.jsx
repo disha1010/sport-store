@@ -48,7 +48,7 @@ class Gallery extends Component {
         </ImageWrapper>
         <Thumbnails>
           {images.map((image, index) => (
-            <ButtonImage onClick={() => this.selectImg(index)}>
+            <ButtonImage key={image.preview} onClick={() => this.selectImg(index)}>
               <Slide src={image.preview} alt="shoes slide" />
             </ButtonImage>
           ))}

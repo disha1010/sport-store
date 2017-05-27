@@ -51,8 +51,6 @@ export const ButtonTitle = styled.button`
   border: none;
   padding: 0px;
   background: none;
-  display: inline-block;
-  vertical-align: middle;
   text-decoration: none;
   cursor: pointer;
   color: #fff;

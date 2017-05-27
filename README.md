@@ -11,4 +11,4 @@ $ npm test
     Starts the test runner.
 
 ```
-## Demo: http://giddy-glove.surge.sh/
+## Demo: http://adidas-shop-di.surge.sh/

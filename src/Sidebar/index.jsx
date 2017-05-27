@@ -27,17 +27,17 @@ class SideBar extends Component {
         <MenuIcon src={hamburger} alt="menu-icon" onClick={this.toggleMobileMenu} />
         <Search />
         <MenuWrapper isMobileOpened={this.state.isMobileMenuOpened}>
-          <Menu title="football">
+          <Menu title="football" >
             <Link to="/products/football/shoes">shoes</Link>
             <Link to="/products/football/clothing">clothing</Link>
             <Link to="/products/football/accesories"> accesories </Link>
           </Menu>
-          <Menu title="running">
+          <Menu title="running" >
             <Link to="/products/running/shoes"> shoes </Link>
             <Link to="/products/running/clothing"> clothing </Link>
             <Link to="/products/running/accesories"> accesories </Link>
           </Menu>
-          <Menu title="basketball">
+          <Menu title="basketball" >
             <Link to="/products/basketball/shoes"> shoes </Link>
             <Link to="/products/basketball/clothing"> clothing </Link>
             <Link to="/products/basketball/accesories"> accesories </Link>
