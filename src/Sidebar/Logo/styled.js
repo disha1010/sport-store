@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import logo from './logo.png';
 import mobileLogo from './mobile-logo.png';
 
-export const StyledLink = styled(Link)`
+export const StyledLink = styled(NavLink)`
   display: block;
   padding-top: 17px;
   padding-bottom: 17px;
