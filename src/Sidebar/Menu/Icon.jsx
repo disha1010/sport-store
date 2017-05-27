@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const SvgWrapper = styled.svg`
+const Svg = styled.svg`
   padding-bottom: 4px;
   padding-left: 10px;
 `;
 
 export default () => (
-  <SvgWrapper
+  <Svg
     xmlns="http://www.w3.org/2000/svg"
     width="14"
     height="9"
@@ -29,5 +29,5 @@ export default () => (
         transform="rotate(47 9.5 4.5)"
       />
     </g>
-  </SvgWrapper>
+  </Svg>
 );

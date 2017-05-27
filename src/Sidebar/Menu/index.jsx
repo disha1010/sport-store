@@ -5,23 +5,18 @@ import ArrowIcon from './Icon';
 import { Nav, ButtonTitle, Wrapper } from './styled';
 
 class Menu extends Component {
-  static isActiveMenu(category, locationPath) {
-    const routes = locationPath.split('/');
-    return category && routes[2] && routes[2] === category;
-  }
-
   constructor(props) {
     super(props);
     this.toggle = this.toggle.bind(this);
     this.state = {
-      isOpened: Menu.isActiveMenu(props.category, props.location.pathname),
+      isOpened: props.location.pathname.split('/')[2] === props.category,
     };
   }
 
   componentWillReceiveProps(nextProps) {
     this.setState(prevState => ({
       isOpened: prevState.isOpened ||
-        Menu.isActiveMenu(nextProps.category, nextProps.location.pathname),
+        nextProps.location.pathname.split('/')[2] === nextProps.category,
     }));
   }
 
